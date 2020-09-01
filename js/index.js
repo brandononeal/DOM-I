@@ -48,7 +48,17 @@ const nav3 = nav2.nextElementSibling
 const nav4 = nav3.nextElementSibling
 const nav5 = nav4.nextElementSibling
 const nav6 = nav5.nextElementSibling
+const navItem = document.querySelector('nav')
+const nav7 = document.createElement('a')
+nav7.href = '#'
+nav7.textContent = 'World'
+navItem.appendChild(nav7)
+const nav0 = document.createElement('a')
+nav0.href = '#'
+nav0.textContent = 'Hello'
+navItem.prepend(nav0)
 const navItems = document.querySelectorAll('nav a')
+
 nav1.textContent = siteContent['nav']['nav-item-1']
 nav2.textContent = siteContent['nav']['nav-item-2']
 nav3.textContent = siteContent['nav']['nav-item-3']
