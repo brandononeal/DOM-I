@@ -42,18 +42,22 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 // nar bar
-const nav1 = document.querySelector('header nav a')
+const nav1 = document.querySelector('nav a')
 const nav2 = nav1.nextElementSibling
 const nav3 = nav2.nextElementSibling
 const nav4 = nav3.nextElementSibling
 const nav5 = nav4.nextElementSibling
 const nav6 = nav5.nextElementSibling
+const navItems = document.querySelectorAll('nav a')
 nav1.textContent = siteContent['nav']['nav-item-1']
 nav2.textContent = siteContent['nav']['nav-item-2']
 nav3.textContent = siteContent['nav']['nav-item-3']
 nav4.textContent = siteContent['nav']['nav-item-4']
 nav5.textContent = siteContent['nav']['nav-item-5']
 nav6.textContent = siteContent['nav']['nav-item-6']
+navItems.forEach(link => {
+  link.style.color = 'green'
+})
 
 // h1
 const h1 = document.querySelector('h1')
